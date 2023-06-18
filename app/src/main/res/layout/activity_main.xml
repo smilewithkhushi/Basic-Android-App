@@ -1,5 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
     <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:id="@+id/linearLayout"
@@ -134,9 +136,65 @@
                     android:textColor="@color/black" />
 
 
+                <TextView
+                    android:id="@+id/impIntentHeading"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_margin="20dp"
+                    android:fontFamily="sans-serif-black"
+                    android:text="IMPLICIT INTENTS"
+                    android:textAlignment="center"
+                    android:textColor="#9709AF"
+                    android:textSize="20sp" />
 
+                <TextView
+                    android:id="@+id/impIntentInfo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_margin="15dp"
+                    android:fontFamily="monospace"
+                    android:text="@string/impIntent_info"
+                    android:textAlignment="center"
+                    android:textColor="@color/black"
+                    android:textSize="16sp" />
 
+                <EditText
+                    android:id="@+id/browseLink"
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:layout_margin="10dp"
+                    android:inputType="text"
+                    android:layout_gravity="center"
+                    android:text="Enter the link" />
 
+                <Button
+                    android:id="@+id/webBtn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginVertical="5dp"
+                    android:backgroundTint="#FF03DAC5"
+                    android:text="CLICK TO OPEN LINK"
+                    android:textColor="@color/black" />
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/cameraView"
+                    android:layout_width="136dp"
+                    android:layout_height="115dp"
+                    android:layout_gravity="center"
+                    android:layout_margin="20dp"
+                    android:backgroundTint="@color/purple_200">
+
+                    <ImageView
+                        android:id="@+id/cameraimg"
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:layout_gravity="center"
+                        app:srcCompat="@drawable/cameralens" />
+                </androidx.cardview.widget.CardView>
 
 
             </LinearLayout>

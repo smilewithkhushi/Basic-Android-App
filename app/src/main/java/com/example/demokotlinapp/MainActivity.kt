@@ -1,12 +1,15 @@
 package com.example.demokotlinapp
 
 import android.content.Intent
+import android.net.Uri
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
 import android.widget.Button
+import android.widget.EditText
 import android.widget.LinearLayout
 import android.widget.Toast
+import androidx.cardview.widget.CardView
 import androidx.constraintlayout.widget.ConstraintSet.Constraint
 
 class MainActivity : AppCompatActivity() {
@@ -49,6 +52,18 @@ class MainActivity : AppCompatActivity() {
             intent = Intent(application, screen2::class.java)
             startActivity(intent)
         })
+
+        val camerabtn=findViewById<CardView>(R.id.cameraView)
+        val browserBtn=findViewById<Button>(R.id.webBtn)
+        val link=findViewById<EditText>(R.id.browseLink)
+
+        browserBtn.setOnClickListener(View.OnClickListener {
+            val intents=Intent(Intent.ACTION_VIEW)
+            val urlText=link.getText().toString()
+            intent.data= Uri.parse(urlText)
+            startActivity(intent)
+        })
+
 
 
     }
