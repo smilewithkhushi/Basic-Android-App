@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">demoKotlinApp</string>
+    <string name="toast_info">A toast provides simple feedback about an operation in a small popup. It only fills the amount of space required for the message and the current activity remains visible and interactive. Toasts automatically disappear after a timeout.</string>
+    <string name="expIntent_info">An Intent is a messaging object you can use to request an action from another app component. Although intents facilitate communication between components in several ways, there are three fundamental use cases: Starting an activity. An Activity represents a single screen in an app.
+        An explicit intent is one that you use to launch a specific app component, such as a particular activity or service in your app. To create an explicit intent, define the component name for the Intent object—all other intent properties are optional.</string>
+
+
+</resources>
