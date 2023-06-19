@@ -59,9 +59,9 @@ class MainActivity : AppCompatActivity() {
 
         browserBtn.setOnClickListener(View.OnClickListener {
             val intents=Intent(Intent.ACTION_VIEW)
-            val urlText=link.getText().toString()
-            intent.data= Uri.parse(urlText)
-            startActivity(intent)
+           // val urlText=link.editableText.toString()
+            intents.data= Uri.parse("https://www.google.com")
+            startActivity(intents)
         })
 
 
