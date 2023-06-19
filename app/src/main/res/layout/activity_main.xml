@@ -181,59 +181,138 @@
                     android:textColor="@color/black" />
 
                 <LinearLayout
-                    android:layout_width="match_parent"
+                    android:layout_width="300dp"
                     android:layout_gravity="center"
                     android:layout_height="wrap_content"
                     android:orientation="horizontal">
 
                 <androidx.cardview.widget.CardView
                     android:id="@+id/cameraView"
-                    android:layout_width="100dp"
-                    android:layout_height="100dp"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
                     android:layout_gravity="center"
-                    android:layout_margin="20dp"
+                    android:layout_margin="10dp"
                     android:backgroundTint="@color/purple_200">
 
                     <ImageView
                         android:id="@+id/cameraimg"
-                        android:layout_width="80dp"
-                        android:layout_height="80dp"
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
                         android:layout_gravity="center"
                         app:srcCompat="@drawable/cameralens" />
                 </androidx.cardview.widget.CardView>
 
                     <androidx.cardview.widget.CardView
                         android:id="@+id/messageView"
-                        android:layout_width="100dp"
-                        android:layout_height="100dp"
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
                         android:layout_gravity="center"
-                        android:layout_margin="20dp"
+                        android:layout_margin="10dp"
                         android:backgroundTint="@color/purple_200">
 
                         <ImageView
                             android:id="@+id/messageimg"
-                            android:layout_width="100dp"
-                            android:layout_height="100dp"
+                            android:layout_width="60dp"
+                            android:layout_height="60dp"
                             android:layout_gravity="center"
                             app:srcCompat="@drawable/messageicon" />
                     </androidx.cardview.widget.CardView>
 
                     <androidx.cardview.widget.CardView
                         android:id="@+id/emailView"
-                        android:layout_width="100dp"
-                        android:layout_height="100dp"
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
                         android:layout_gravity="center"
-                        android:layout_margin="20dp"
+                        android:layout_margin="10dp"
                         android:backgroundTint="@color/purple_200">
 
                         <ImageView
                             android:id="@+id/emailimg"
-                            android:layout_width="100dp"
-                            android:layout_height="100dp"
+                            android:layout_width="60dp"
+                            android:layout_height="60dp"
                             android:layout_gravity="center"
                             app:srcCompat="@drawable/emailicon" />
                     </androidx.cardview.widget.CardView>
                 </LinearLayout>
+
+                <TextView
+                    android:id="@+id/dataPassHeading"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_margin="20dp"
+                    android:fontFamily="sans-serif-black"
+                    android:text="EXCHANGING DATA BETWEEN SCREENS"
+                    android:textAlignment="center"
+                    android:textColor="#9709AF"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/exchangeDataInfo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_margin="15dp"
+                    android:fontFamily="monospace"
+                    android:text="@string/exchangedata_info"
+                    android:textAlignment="center"
+                    android:textColor="@color/black"
+                    android:textSize="16sp" />
+
+
+                <EditText
+                    android:id="@+id/personName"
+                    android:layout_width="300dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="30dp"
+                    android:ems="10"
+                    android:fontFamily="@font/alata"
+                    android:inputType="text"
+                    android:text="Enter your name " />
+
+                <EditText
+                    android:id="@+id/personAge"
+                    android:layout_width="300dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_margin="15dp"
+                    android:ems="10"
+                    android:fontFamily="@font/alata"
+                    android:inputType="number"
+                    android:text="Enter your age " />
+
+                <EditText
+                    android:id="@+id/personCourse"
+                    android:layout_width="300dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_margin="10dp"
+                    android:ems="10"
+                    android:fontFamily="@font/alata"
+                    android:inputType="text"
+                    android:text="Enter your course " />
+
+                <EditText
+                    android:id="@+id/personCollege"
+                    android:layout_width="300dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_margin="10dp"
+                    android:ems="10"
+                    android:fontFamily="@font/alata"
+                    android:inputType="text"
+                    android:text="Enter your college " />
+
+                <Button
+                    android:id="@+id/personDetailBtn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginVertical="5dp"
+                    android:backgroundTint="#FF03DAC5"
+                    android:text="CLICK TO SUBMIT DETAILS"
+                    android:textColor="@color/black" />
 
                 <TextView
                     android:id="@+id/webViewHeading"

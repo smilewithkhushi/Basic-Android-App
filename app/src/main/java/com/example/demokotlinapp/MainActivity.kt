@@ -18,6 +18,11 @@ import androidx.cardview.widget.CardView
 import androidx.constraintlayout.widget.ConstraintSet.Constraint
 
 class MainActivity : AppCompatActivity() {
+
+        //creating static companion object to exchange  data between different screens
+    companion object{
+        const val KEY = "com.example.demokotlinapp.MainActivity.KEY"
+    }
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
@@ -28,6 +33,7 @@ class MainActivity : AppCompatActivity() {
         val light=findViewById<Button>(R.id.lighttheme)
         val layout=findViewById<LinearLayout>(R.id.linearLayout)
 
+        //use of toast in android
         btnUpload.setOnClickListener(View.OnClickListener {
             Toast.makeText(applicationContext, "Uploading..", Toast.LENGTH_SHORT).show()
         }
@@ -38,6 +44,7 @@ class MainActivity : AppCompatActivity() {
         }
         )
 
+        //using buttons to change the layout theme or color
         light.setOnClickListener(View.OnClickListener {
             //change the app theme to light mode
             layout.setBackgroundResource(R.color.skyblue)
@@ -50,13 +57,16 @@ class MainActivity : AppCompatActivity() {
 
         })
 
-
+        //using explicit intent to migrate to another screen
         val secScreenbtn=findViewById<Button>(R.id.secondScreen)
         secScreenbtn.setOnClickListener(View.OnClickListener {
             Toast.makeText(applicationContext, "Moving to second scree", Toast.LENGTH_SHORT).show()
             intent = Intent(application, screen2::class.java)
             startActivity(intent)
         })
+
+
+        //using card view and implicit intents
 
         val camerabtn=findViewById<CardView>(R.id.cameraView)
         val browserBtn=findViewById<Button>(R.id.webBtn)
@@ -85,6 +95,22 @@ class MainActivity : AppCompatActivity() {
 
         val webViewVariable=findViewById<WebView>(R.id.webView)
         webViewSetup(webViewVariable)
+
+        //exchanging data between two screens
+
+        val personDetailButton=findViewById<Button>(R.id.personDetailBtn)
+        val prsnName=findViewById<EditText>(R.id.personName)
+        val prsnage=findViewById<EditText>(R.id.personAge)
+        val prsncourse=findViewById<EditText>(R.id.personCourse)
+        val prsnclg=findViewById<EditText>(R.id.personCollege)
+
+        personDetailButton.setOnClickListener{
+            Toast.makeText(applicationContext, "Your details have been saved!", Toast.LENGTH_SHORT).show()
+            val personMessage="Hi there "+prsnName.text.toString()+". You are "+prsnage.text.toString()+" years old. You are pursuing "+prsncourse.text.toString()+" course from "+prsnclg.text.toString()+" college!"
+            intent = Intent(application, screen2::class.java)
+            intent.putExtra(KEY, personMessage)
+            startActivity(intent)
+        }
     }
 
     private fun webViewSetup(webView: WebView){
@@ -92,8 +118,6 @@ class MainActivity : AppCompatActivity() {
         webView.apply {
             loadUrl("https://www.github.com/SmileWithKhushi")
             settings.javaScriptEnabled=true
-
-
         }
 
 
