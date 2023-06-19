@@ -162,7 +162,7 @@
 
                 <EditText
                     android:id="@+id/browseLink"
-                    android:layout_width="200dp"
+                    android:layout_width="350dp"
                     android:layout_height="wrap_content"
                     android:ems="10"
                     android:layout_margin="10dp"
@@ -180,21 +180,89 @@
                     android:text="CLICK TO OPEN LINK"
                     android:textColor="@color/black" />
 
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_gravity="center"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
                 <androidx.cardview.widget.CardView
                     android:id="@+id/cameraView"
-                    android:layout_width="136dp"
-                    android:layout_height="115dp"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
                     android:layout_gravity="center"
                     android:layout_margin="20dp"
                     android:backgroundTint="@color/purple_200">
 
                     <ImageView
                         android:id="@+id/cameraimg"
-                        android:layout_width="100dp"
-                        android:layout_height="100dp"
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
                         android:layout_gravity="center"
                         app:srcCompat="@drawable/cameralens" />
                 </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/messageView"
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:layout_gravity="center"
+                        android:layout_margin="20dp"
+                        android:backgroundTint="@color/purple_200">
+
+                        <ImageView
+                            android:id="@+id/messageimg"
+                            android:layout_width="100dp"
+                            android:layout_height="100dp"
+                            android:layout_gravity="center"
+                            app:srcCompat="@drawable/messageicon" />
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/emailView"
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:layout_gravity="center"
+                        android:layout_margin="20dp"
+                        android:backgroundTint="@color/purple_200">
+
+                        <ImageView
+                            android:id="@+id/emailimg"
+                            android:layout_width="100dp"
+                            android:layout_height="100dp"
+                            android:layout_gravity="center"
+                            app:srcCompat="@drawable/emailicon" />
+                    </androidx.cardview.widget.CardView>
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/webViewHeading"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_margin="20dp"
+                    android:fontFamily="sans-serif-black"
+                    android:text="WEB VIEW"
+                    android:textAlignment="center"
+                    android:textColor="#9709AF"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/webViewInfo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_margin="15dp"
+                    android:fontFamily="monospace"
+                    android:text="@string/webview_info"
+                    android:textAlignment="center"
+                    android:textColor="@color/black"
+                    android:textSize="16sp" />
+
+                <WebView
+                    android:id="@+id/webView"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
 
 
             </LinearLayout>
