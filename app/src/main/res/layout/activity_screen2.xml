@@ -36,6 +36,16 @@
                 android:layout_height="wrap_content"
                 android:text="Move to home screen" />
 
+            <TextView
+                android:id="@+id/personDetails"
+                android:layout_width="300dp"
+                android:layout_gravity="center"
+                android:padding="20dp"
+                android:textSize="20dp"
+                android:layout_height="wrap_content"
+                android:text=" "
+                android:fontFamily="@font/alata"/>
+
         </LinearLayout>
     </ScrollView>
 

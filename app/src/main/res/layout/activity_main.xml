@@ -9,7 +9,8 @@
 
         <ScrollView
             android:layout_width="match_parent"
-            android:layout_height="match_parent">>
+            android:layout_height="match_parent">
+
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -313,6 +314,30 @@
                     android:backgroundTint="#FF03DAC5"
                     android:text="CLICK TO SUBMIT DETAILS"
                     android:textColor="@color/black" />
+
+                <TextView
+                    android:id="@+id/gradientUIHeading"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_margin="20dp"
+                    android:fontFamily="sans-serif-black"
+                    android:text="EXCHANGING DATA BETWEEN SCREENS"
+                    android:textAlignment="center"
+                    android:textColor="#9709AF"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/exchangeDataInfo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_margin="15dp"
+                    android:fontFamily="monospace"
+                    android:text="@string/exchangedata_info"
+                    android:textAlignment="center"
+                    android:textColor="@color/black"
+                    android:textSize="16sp" />
 
                 <TextView
                     android:id="@+id/webViewHeading"
