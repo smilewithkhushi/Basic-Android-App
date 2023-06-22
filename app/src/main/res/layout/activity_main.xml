@@ -5,6 +5,7 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:id="@+id/linearLayout"
+    android:background="@drawable/mainbackground"
         android:orientation="vertical">
 
         <ScrollView
@@ -270,7 +271,7 @@
                     android:ems="10"
                     android:fontFamily="@font/alata"
                     android:inputType="text"
-                    android:text="Enter your name " />
+                    android:hint="Enter your name " />
 
                 <EditText
                     android:id="@+id/personAge"
@@ -281,7 +282,7 @@
                     android:ems="10"
                     android:fontFamily="@font/alata"
                     android:inputType="number"
-                    android:text="Enter your age " />
+                    android:hint="Enter your age " />
 
                 <EditText
                     android:id="@+id/personCourse"
@@ -292,7 +293,7 @@
                     android:ems="10"
                     android:fontFamily="@font/alata"
                     android:inputType="text"
-                    android:text="Enter your course " />
+                    android:hint="Enter your course " />
 
                 <EditText
                     android:id="@+id/personCollege"
@@ -303,7 +304,7 @@
                     android:ems="10"
                     android:fontFamily="@font/alata"
                     android:inputType="text"
-                    android:text="Enter your college " />
+                    android:hint="Enter your college " />
 
                 <Button
                     android:id="@+id/personDetailBtn"
