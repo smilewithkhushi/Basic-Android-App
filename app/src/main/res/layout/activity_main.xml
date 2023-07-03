@@ -164,13 +164,13 @@
 
                 <EditText
                     android:id="@+id/browseLink"
-                    android:layout_width="350dp"
+                    android:layout_width="200dp"
                     android:layout_height="wrap_content"
                     android:ems="10"
                     android:layout_margin="10dp"
                     android:inputType="text"
                     android:layout_gravity="center"
-                    android:text="Enter the link" />
+                    android:hint="Enter the link" />
 
                 <Button
                     android:id="@+id/webBtn"
@@ -317,28 +317,95 @@
                     android:textColor="@color/black" />
 
                 <TextView
-                    android:id="@+id/gradientUIHeading"
+                    android:id="@+id/dialogBoxHeading"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
                     android:layout_margin="20dp"
                     android:fontFamily="sans-serif-black"
-                    android:text="EXCHANGING DATA BETWEEN SCREENS"
+                    android:text="ALERT DIALOG BOX"
                     android:textAlignment="center"
                     android:textColor="#9709AF"
                     android:textSize="20sp" />
 
                 <TextView
-                    android:id="@+id/exchangeDataInfo"
+                    android:id="@+id/dialogBoxInfo"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
                     android:layout_margin="15dp"
                     android:fontFamily="monospace"
-                    android:text="@string/exchangedata_info"
+                    android:text="@string/dialogBox_info"
                     android:textAlignment="center"
                     android:textColor="@color/black"
                     android:textSize="16sp" />
+
+
+                <Button
+                    android:id="@+id/alertbtn1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:paddingHorizontal="10dp"
+                    android:layout_margin="10dp"
+                    android:textColor="@color/white"
+                    android:backgroundTint="@color/purple_200"
+                    android:text="Click for Alert Button 1" />
+                <Button
+                    android:id="@+id/alertbtn2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:paddingHorizontal="10dp"
+                    android:layout_margin="10dp"
+                    android:textColor="@color/white"
+                    android:backgroundTint="@color/purple_500"
+                    android:text="Click for Alert Button 2" />
+                <Button
+                    android:id="@+id/alertbtn3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:paddingHorizontal="10dp"
+                    android:layout_margin="10dp"
+                    android:textColor="@color/white"
+                    android:backgroundTint="@color/teal_700"
+                    android:text="Click for Alert Button 3" />
+
+                <TextView
+                    android:id="@+id/custAlertBoxHeading"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_margin="20dp"
+                    android:fontFamily="sans-serif-black"
+                    android:text="CUSTOMIZED ALERT DIALOG BOX"
+                    android:textAlignment="center"
+                    android:textColor="#9709AF"
+                    android:textSize="20sp" />
+
+                <Button
+                    android:id="@+id/custAlert1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:paddingHorizontal="10dp"
+                    android:layout_margin="10dp"
+                    android:textColor="@color/white"
+                    android:backgroundTint="@color/teal_700"
+                    android:text="Click for App Development" />
+
+
+                <Button
+                    android:id="@+id/custAlert2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:paddingHorizontal="10dp"
+                    android:layout_margin="10dp"
+                    android:textColor="@color/white"
+                    android:backgroundTint="@color/purple_200"
+                    android:text="Click for Alert Button 2" />
 
                 <TextView
                     android:id="@+id/webViewHeading"

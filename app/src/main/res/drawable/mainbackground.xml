@@ -5,8 +5,6 @@
             <gradient
                 android:startColor="#D5F6DE"
                 android:centerColor="#62ECD0"
-                android:gradientRadius="@dimen/cardview_default_elevation"
-                android:angle="@integer/material_motion_duration_medium_2"
                 android:endColor="#B6EFEF">
 
             </gradient>
