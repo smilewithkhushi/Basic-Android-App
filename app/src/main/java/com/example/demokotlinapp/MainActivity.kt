@@ -16,6 +16,7 @@ import android.widget.LinearLayout
 import android.widget.Toast
 import androidx.appcompat.app.AlertDialog
 import androidx.cardview.widget.CardView
+import androidx.fragment.app.DialogFragment
 
 class MainActivity : AppCompatActivity() {
 
@@ -173,8 +174,7 @@ class MainActivity : AppCompatActivity() {
         val custAlertBox2=findViewById<Button>(R.id.custAlert2)
 
         custAlertBox1.setOnClickListener{
-
-            dialog1=Dialog(this)
+            dialog1= Dialog(this)
             dialog1.setContentView(R.layout.custom_dialog1)
             dialog1.window?.setBackgroundDrawable(getDrawable(R.drawable.bg_alertbox))
 
@@ -190,11 +190,17 @@ class MainActivity : AppCompatActivity() {
                 Toast.makeText(this, "Please fill the feedback form!", Toast.LENGTH_SHORT).show()
             }
             buttonfeedback.setOnClickListener {
-                Toast.makeText(this, "Feedback form will be avaiable in a while!", Toast.LENGTH_SHORT).show()
+                Toast.makeText(this, "Feedback form will be available in a while!", Toast.LENGTH_SHORT).show()
             }
 
         }
 
+        //open image gallery
+        val galleryBtn= findViewById<Button>(R.id.imageGalleryButton)
+        galleryBtn.setOnClickListener {
+            intent = Intent(this, imageGallery::class.java)
+            startActivity(intent)
+        }
 
 
     }

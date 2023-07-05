@@ -4,9 +4,9 @@
     <string name="expIntent_info">An Intent is a messaging object you can use to request an action from another app component.
         An explicit intent is one that you use to launch a specific app component, such as a particular activity or service in your app. </string>
     <string name="impIntent_info">An implicit intent specifies an action that can invoke any app on the device able to perform the action. Using an implicit intent is useful when your app cannot perform the action, but other apps probably can and you\'d like the user to pick which app to use.</string>
-<string name="webview_info">The WebView class is an extension of Android\'s View class that allows you to display web pages as a part of your activity layout. All that WebView does, by default, is show a web page</string>
-<string name="exchangedata_info">In order to send the data from one screen to another we can send the data using the putExtra() method from one activity and get the data from the second activity using the getStringExtra() method.</string>
-<string name="dialogBox_info">A dialog is a small window that prompts the user to make a decision or enter additional information. A dialog does not fill the screen and is normally used for modal events that require users to take an action before they can proceed.</string>
+    <string name="webview_info">The WebView class is an extension of Android\'s View class that allows you to display web pages as a part of your activity layout. All that WebView does, by default, is show a web page</string>
+    <string name="exchangedata_info">In order to send the data from one screen to another we can send the data using the putExtra() method from one activity and get the data from the second activity using the getStringExtra() method.</string>
+    <string name="dialogBox_info">A dialog is a small window that prompts the user to make a decision or enter additional information. A dialog does not fill the screen and is normally used for modal events that require users to take an action before they can proceed.</string>
 
 
 </resources>

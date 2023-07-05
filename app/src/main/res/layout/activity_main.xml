@@ -407,6 +407,31 @@
                     android:backgroundTint="@color/purple_200"
                     android:text="Click for Alert Button 2" />
 
+
+                <TextView
+                    android:id="@+id/imageGalleryHeading"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_margin="20dp"
+                    android:fontFamily="sans-serif-black"
+                    android:text="A PHOTO GALLERY INSPIRED BY ANIME"
+                    android:textAlignment="center"
+                    android:textColor="#9709AF"
+                    android:textSize="20sp" />
+
+                <Button
+                    android:id="@+id/imageGalleryButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:paddingHorizontal="10dp"
+                    android:layout_margin="10dp"
+                    android:textColor="@color/white"
+                    android:backgroundTint="@color/purple_200"
+                    android:text="Click to open" />
+
+
                 <TextView
                     android:id="@+id/webViewHeading"
                     android:layout_width="wrap_content"
